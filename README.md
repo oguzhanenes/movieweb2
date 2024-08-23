@@ -1,50 +1,7 @@
-# React + TypeScript + Vite
+![Screenshot1Cinema](https://github.com/user-attachments/assets/aba6ad45-e8c4-4dd4-88fc-cb14ab130912)
+![Screenshot2Cinema](https://github.com/user-attachments/assets/ed64b533-a00e-4468-bd73-98735b4d72a5)
+![Screenshot3Cinema](https://github.com/user-attachments/assets/0c680d60-8e44-4b96-93b9-e50f8d8e94c0)
+![Screenshot6Cinema](https://github.com/user-attachments/assets/a64e63e7-28dd-4ab8-8c07-71e4f92a3f92)
+![Screenshot4Cinema](https://github.com/user-attachments/assets/b6b7b995-2f3c-4bef-aaed-801a3f9b1d98)
+![Screenshot5Cinema](https://github.com/user-attachments/assets/56a37800-e754-4608-a153-83a58d086547)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
